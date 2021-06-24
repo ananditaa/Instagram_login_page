@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Instagram</string>
+    <string name="Instagram">Instagram</string>
+    <string name="usernamebox">Phone number, username, or email</string>
+    <string name="Passwordbox">Password</string>
+    <string name="login">Log In</string>
+    <string name="or">OR</string>
+    <string name="fbname">Log in with facebook</string>
+    <string name="noacc">No Account? Sign Up</string>
+    <string name="loginsuccess">You have been successfully logged into Instagram.</string>
+    <string name="logintofb">Log in to your facebook account to connect to Instagram</string>
+    <string name="helpfb">Forgotten Password?•Help Center•Create account</string>
+    <string name="catext">Sign up to see photos and videos of your friends</string>
+    <string name="fnca">First Name</string>
+    <string name="lnca">Last Name</string>
+    <string name="signup">Sign Up</string>
+    <string name="fline">By signing up, you agree to our</string>
+    <string name="sline">Terms,Data Policy and Cookies Policy.</string>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:gravity="center_horizontal"
+            android:text="@string/Instagram"
+            android:layout_marginTop="25dp"
+            android:textSize="50sp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/instatext_id"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/catext"
+        android:layout_gravity="center"
+        android:textColorHighlight="@color/grey"
+        android:textSize="17sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/usernamebox"
+            android:inputType="text"
+            android:id="@+id/usernameboxca_id"
+            android:autofillHints="no" />
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/fnca"
+            android:inputType="text"
+            android:id="@+id/firstnameca_id"
+            android:autofillHints="no" />
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lnca"
+            android:inputType="text"
+            android:id="@+id/lastnameca_id"
+            android:autofillHints="no" />
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Passwordbox"
+            android:id="@+id/passwordboxca_id"
+            android:inputType="textPassword"
+            android:autofillHints="no" />
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signup"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:backgroundTint="@color/fbblue"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:id="@+id/login"
+            tools:ignore="UnusedAttribute" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fline"
+        android:layout_gravity="center"
+        android:textColorHighlight="@color/grey"
+        android:textSize="17sp"/>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sline"
+        android:layout_gravity="center"
+        android:textColorHighlight="@color/grey"
+        android:textSize="17sp"/>
+</LinearLayout>

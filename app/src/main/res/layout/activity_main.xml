@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:gravity="center_horizontal"
+            android:text="@string/Instagram"
+            android:layout_marginTop="25dp"
+            android:textSize="50sp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/instatext_id"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/usernamebox"
+            android:inputType="text"
+            android:id="@+id/usernamebox_id"
+            android:autofillHints="no" />
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Passwordbox"
+            android:id="@+id/passwordbox_id"
+            android:inputType="textPassword"
+            android:autofillHints="no" />
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:backgroundTint="@color/fbblue"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:id="@+id/login"
+            tools:ignore="UnusedAttribute" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/or"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/fbname"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:id="@+id/fbname"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/fbblue"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            tools:ignore="UnusedAttribute"
+             />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/noacc_id"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/noacc"
+        android:layout_marginTop="80dp"
+        android:textSize="25sp"
+        android:textColor="@color/fbblue"
+        android:textColorHighlight="@color/black"
+        android:textStyle="italic"
+        android:fontFamily="serif-monospace"
+        />
+</LinearLayout>
