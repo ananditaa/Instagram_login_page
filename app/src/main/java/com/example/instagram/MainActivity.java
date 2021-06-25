@@ -5,31 +5,31 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    String username,password;
-    EditText UserName,Password;
-    Button LoginBtn,LoginfbBtn;
-    TextView SignupBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        UserName = findViewById(R.id.usernamebox_id);
-        username = UserName.getText().toString();
-        Password = findViewById(R.id.passwordbox_id);
-        password = Password.getText().toString();
-        LoginBtn = findViewById(R.id.login);
+        EditText UserName=(EditText) findViewById(R.id.usernamebox_id);
+        EditText Password=(EditText) findViewById(R.id.passwordbox_id);
+        Button LoginBtn=(Button) findViewById(R.id.login);
         LoginBtn.setOnClickListener(v -> {
-            if(v.getId()==R.id.login)
-            {
-                System.out.println("Log in success!");
+            String username=UserName.getText().toString();
+            String password=Password.getText().toString();
+            if (username.equals("ananditaa") && !password.equals("") && password.equals("anan")) {
+                Toast.makeText(getApplicationContext(), "Login Success", Toast.LENGTH_SHORT).show();
             }
+            else {
+                Toast.makeText(getApplicationContext(), "Login Failure", Toast.LENGTH_SHORT).show();
+            }
+
         });
-        LoginfbBtn = findViewById(R.id.fbname);
+        Button LoginfbBtn=(Button) findViewById(R.id.fbname);
         LoginfbBtn.setOnClickListener(v -> {
             if(v.getId()==R.id.fbname)
             {
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(fbloginIntent);
             }
         });
-        SignupBtn = findViewById(R.id.noacc_id);
+        TextView SignupBtn=(TextView) findViewById(R.id.noacc_id);
         SignupBtn.setOnClickListener(v -> {
             if(v.getId()==R.id.noacc_id)
             {
@@ -45,8 +45,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(signupIntent);
             }
         });
-
-
     }
 
 }
